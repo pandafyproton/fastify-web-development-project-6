@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  pg:
+    container_name: tasks-pg
+    volumes:
+      - db_data
+
+volumes:
+  db_data:
+    driver: local
